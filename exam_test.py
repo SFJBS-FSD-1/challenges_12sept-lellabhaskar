@@ -1,4 +1,14 @@
 #https://github.com/SFJBS-FSD-1/challenges_12sept-lellabhaskar
+
+# go to terminal
+# git init
+# git status
+# git add .\exam_test.py
+# git commit -m "added file exam_test.py challenges"
+
+# git remote add origin https://github.com/SFJBS-FSD-1/challenges_12sept-lellabhaskar
+# git push -u origin master
+
 # Challenges:
 #print('test')
 
@@ -23,28 +33,26 @@
 #3:Write a function where user will enter a natural number as input and output returns the number of zeroes in the end of the factorial of that number.
    #Conversion of number to string is not allowed
 
-# usernum = int(input("please enter a natural number"))
-# fact_number = 1
-# while usernum >= 1:
-#     fact_number = fact_number * usernum
-#     usernum = usernum - 1
-# print(f'fact_number of the number is {fact_number}')
-# newnumber=fact_number
-# count=0
-#
-#
-# check_zero = newnumber % 10
-# print(check_zero)
-# if check_zero!=0:
-#     checkwithzero=newnumber//10
-#     print(checkwithzero)
-# count=count+1
-# print(count)
-#
-#
-# if check_zero!=0:
-#     pass
+usernum = int(input("please enter a natural number"))
+fact_number = 1
+while usernum >= 1:
+    fact_number = fact_number * usernum
+    usernum = usernum - 1
+print(f'fact_number of the number is {fact_number}')
 
+count=0
+while fact_number:
+    give_num=fact_number//10
+    reminder = give_num % 10
+    fact_number=give_num
+    count = count + 1
+    if reminder!=0:
+        break
+
+#print(count)
+
+
+print(f'number of zeros after factorial are {count}')
 
 # Challenge 4
 
